@@ -1,0 +1,261 @@
+AUTOMATED JOB SEARCH: RESEARCH EVIDENCE
+Checked 1 November 2026
+
+Scope: public web/GitHub research and static source inspection only. No repositories installed, built or executed; no live applications, messages or schedules. Research scripts only fetched/read public text. No resume or journal content was sent to third-party job tools.
+Evidence levels: code inspected establishes an implemented path, not successful operation against current websites. Provider help documents establish documented product behavior, not an independently tested success rate. Stars were not used as the ranking criterion.
+Search coverage: job discovery/scraping; resume-job matching and semantic ranking; alerts; self-hosted application tracking; tailoring; assisted form filling and unattended applications; n8n workflows; historical AIHawk. Broad multi-query coverage is not an exhaustive inventory of GitHub. Ten application/workflow implementations were inspected, plus the redirected AIHawk repository.
+
+speedyapply/JobSpy
+https://github.com/speedyapply/JobSpy
+Discovery component, not a complete search manager. Inspected scraper dispatcher and LinkedIn/Naukri adapters. Nine adapters in code do not establish nine working sources. Google Jobs remains an open pinned outage report (#284); recent commits repair source layouts and salary parsing. No live scraper execution. MIT.
+Inspected revision: 68b88d6909a2342ad75fbb945c4204a3a7ed6665
+Commit history: https://github.com/speedyapply/JobSpy/commits/main
+Recent commits:
+  2026-10-27T15:30:40Z build(deps): bump certifi from 2026.7.22 to 2026.10.19 in the pip group across 1 directory (#437) https://github.com/speedyapply/JobSpy/commit/68b88d6909a2342ad75fbb945c4204a3a7ed6665
+  2026-10-23T05:06:42Z chore: prepare 1.4.1 (#436) https://github.com/speedyapply/JobSpy/commit/a606f9cf077c34f6ce6cbfcc76238f57b3c20671
+  2026-10-23T03:20:55Z fix(linkedin): preserve cents and mixed k salary ranges (#421) https://github.com/speedyapply/JobSpy/commit/72192008bec5db83b30286d1c82ae8c973e49470
+  2026-10-22T21:04:29Z fix(ziprecruiter): read second search page layout (#435) https://github.com/speedyapply/JobSpy/commit/cd8b367a476dc1ba2182c1aa38012f82ed29446f
+  2026-10-22T20:19:31Z fix(hellowork): read the title and company from the new span markup (#433) https://github.com/speedyapply/JobSpy/commit/c3379a4a8bbb3b7b59aa4a305ffa2b9a762d6977
+Source/document files inspected:
+  https://github.com/speedyapply/JobSpy/blob/68b88d6909a2342ad75fbb945c4204a3a7ed6665/jobspy/__init__.py
+  https://github.com/speedyapply/JobSpy/blob/68b88d6909a2342ad75fbb945c4204a3a7ed6665/jobspy/linkedin/__init__.py
+  https://github.com/speedyapply/JobSpy/blob/68b88d6909a2342ad75fbb945c4204a3a7ed6665/jobspy/naukri/__init__.py
+  https://github.com/speedyapply/JobSpy/blob/68b88d6909a2342ad75fbb945c4204a3a7ed6665/LICENSE
+  https://github.com/speedyapply/JobSpy/blob/68b88d6909a2342ad75fbb945c4204a3a7ed6665/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  open | Cache of downloaded content | https://github.com/speedyapply/JobSpy/issues/441
+  closed | build(deps): bump certifi from 2026.7.22 to 2026.10.19 in the pip group across 1 directory | https://github.com/speedyapply/JobSpy/pull/437
+  open | Optional: publicly verifiable certificate for jobspy (one workflow file) | https://github.com/speedyapply/JobSpy/issues/442
+  open | Feature Request: Add Dubizzle Job Search | https://github.com/speedyapply/JobSpy/issues/440
+  closed | fix(indeed): keep jobs when the posting date is missing | https://github.com/speedyapply/JobSpy/pull/420
+  open | fix(glassdoor): find "City, Country" locations on local sites | https://github.com/speedyapply/JobSpy/pull/439
+  open | Glassdoor: "City, Country" location not found in Austria, Germany, Spain, Italy | https://github.com/speedyapply/JobSpy/issues/438
+  closed | chore: prepare 1.4.1 | https://github.com/speedyapply/JobSpy/pull/436
+  closed | fix(linkedin): preserve cents and mixed k salary ranges | https://github.com/speedyapply/JobSpy/pull/421
+  closed | fix(hellowork): read the title and company from the new span markup | https://github.com/speedyapply/JobSpy/pull/433
+
+srbhr/Resume-Matcher
+https://github.com/srbhr/Resume-Matcher
+Strong specialist candidate for reviewed tailoring. Inspected diff application, original-text verification, metric warnings, refinement, deterministic ATS-style scoring, and opt-in model evaluations. Its evaluation file expressly disclaims commercial ATS accuracy. Recent closed reports cover PDF-preview mismatch, lost skills and over-trimming; closure is not our regression test. Apache-2.0. Version 1.4.0 released 2026-10-21.
+Inspected revision: 8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234
+Commit history: https://github.com/srbhr/Resume-Matcher/commits/main
+Recent commits:
+  2026-10-30T06:46:36Z Merge pull request #1068 from srbhr/dependabot/npm_and_yarn/apps/frontend/undici-8.12.3 https://github.com/srbhr/Resume-Matcher/commit/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234
+  2026-10-30T06:46:21Z Merge pull request #1067 from grippado/gripp-w-claude/docs-pt-br-translation https://github.com/srbhr/Resume-Matcher/commit/80da173d63006771a0a88c12bfcdc02d62a34be5
+  2026-10-29T18:41:49Z docs(i18n): match the queue heading to the pt-BR UI label https://github.com/srbhr/Resume-Matcher/commit/f27e18ca555cd787b9ca7e79e25b35d79a980674
+  2026-10-29T18:30:29Z docs(i18n): align pt-BR docs with the app's pt-BR UI labels https://github.com/srbhr/Resume-Matcher/commit/50e48c0238166e215745ea26d709bd2a91e8aa68
+  2026-10-29T17:48:44Z build(deps): bump undici from 8.11.2 to 8.12.3 in /apps/frontend https://github.com/srbhr/Resume-Matcher/commit/5bb14e20e0236d85738fad5cc956f8a65a4362df
+Source/document files inspected:
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/apps/backend/app/services/ats.py
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/apps/backend/app/services/improver.py
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/apps/backend/app/services/refiner.py
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/apps/backend/app/services/text_match.py
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/apps/backend/tests/evals/test_tailoring_eval.py
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/LICENSE
+  https://github.com/srbhr/Resume-Matcher/blob/8c6a1b75c6f4eb2e7b9d49986dc5d0a80d5a4234/SETUP.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  closed | [Bug]: PDF export layout differs from the preview | https://github.com/srbhr/Resume-Matcher/issues/1050
+  closed | [Bug]: Tailoring rewrites the candidate's own wording on every run | https://github.com/srbhr/Resume-Matcher/issues/1040
+  closed | [Bug]: Resume upload drops most of a long skills list | https://github.com/srbhr/Resume-Matcher/issues/1036
+  closed | [Bug]: Tailoring a multi-page master cuts every role down to one bullet | https://github.com/srbhr/Resume-Matcher/issues/1032
+
+cboyd0319/JobSentinel
+https://github.com/cboyd0319/JobSentinel
+Promising Windows desktop discovery/ranking/alerts option. Inspected scheduler, scoring, source registry, notification service and source documentation. Source policy routes restricted sites to user-driven review. Scoring component includes USD-specific salary configuration; suitability for other currencies needs checking. Naukri is described as needing source-specific review, not established native coverage. Default branch and public release are July 18 v2.9.5; v3 PR #329 is still open despite an October repository push. Earlier Windows install/search complaints are closed. MIT. No installer tested.
+Inspected revision: 49c827fdcb92e44c1ff9ebaf381ecce5f952fb61
+Commit history: https://github.com/cboyd0319/JobSentinel/commits/main
+Recent commits:
+  2026-07-18T09:15:10Z Refresh v2.9.5 repository README https://github.com/cboyd0319/JobSentinel/commit/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61
+  2026-07-18T06:55:52Z docs(release): record v2.9.5 publication https://github.com/cboyd0319/JobSentinel/commit/4591be94ab37355496dad556d9b249b87b9aa5ea
+  2026-07-18T06:51:32Z fix(release): verify reusable workflow attestations https://github.com/cboyd0319/JobSentinel/commit/84f55d04514433b14af86db10a5652b7f02a1a99
+  2026-07-18T06:05:14Z fix(release): complete hosted test setup https://github.com/cboyd0319/JobSentinel/commit/16e48bfd24297e597ea1c5db2aea1b26a2c8b7e8
+  2026-07-18T05:46:42Z fix(release): install hosted prose checker https://github.com/cboyd0319/JobSentinel/commit/4d4a1acde0256bf6ff0b47666ee8c76a1c2fddff
+Source/document files inspected:
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/crates/jobsentinel-application/src/notify/mod.rs
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/crates/jobsentinel-application/src/scheduler/pipeline.rs
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/crates/jobsentinel-application/src/scoring/components.rs
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/crates/jobsentinel-sources/src/scrapers/builtin.rs
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/docs/features/job-sources.md
+  https://github.com/cboyd0319/JobSentinel/blob/49c827fdcb92e44c1ff9ebaf381ecce5f952fb61/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  open | Add freehire.me as a source — key-free, read-only, nothing to store | https://github.com/cboyd0319/JobSentinel/issues/348
+  closed | Job search always returns “0 results found” + Settings page stuck on loading screen | https://github.com/cboyd0319/JobSentinel/issues/197
+  closed | [Bug]: Broken by Design | https://github.com/cboyd0319/JobSentinel/issues/202
+  closed | ⚠️ Security: Vulnerable Dependencies Detected | https://github.com/cboyd0319/JobSentinel/issues/5
+
+davidcristian/HeadStart
+https://github.com/davidcristian/HeadStart
+Substantial implemented backend: Greenhouse public API adapter, dedup/filter/persist/notify pipeline, notification adapter and conditional auto-apply orchestration. Setup includes multiple services. LICENSE is SSPL v1 despite API license classification NOASSERTION. Treat as source-available, with license review needed before offering a hosted derivative. Default branch last inspected commit August 11; October push is not evidence of a merged functional update. No human bug-report evidence found in the inspected issue search. Not the first choice for a small personal learning project.
+Inspected revision: 510ef86e8571b1189ec776e8878cfe88ff9a62d9
+Commit history: https://github.com/davidcristian/HeadStart/commits/master
+Recent commits:
+  2026-08-11T17:48:36Z fix(deps): empty the frontend audit allowlist https://github.com/davidcristian/HeadStart/commit/510ef86e8571b1189ec776e8878cfe88ff9a62d9
+  2026-08-11T17:31:18Z fix(deps): raise the brace-expansion, fast-uri and nanoid floors https://github.com/davidcristian/HeadStart/commit/9beb83c6c9b84d8ab8ce9a0760a800df899ca698
+  2026-08-11T17:14:52Z fix(deps): raise cryptography past PYSEC-2026-3552 https://github.com/davidcristian/HeadStart/commit/6ebf0d96af93bad7e240cbcc323b4ff10190f194
+  2026-08-11T16:26:05Z chore(deps): regenerate the third party license manifest https://github.com/davidcristian/HeadStart/commit/aeca4cd5fa4e6fac2c0e044604eefee7b6d9f3b3
+  2026-08-11T16:19:41Z build(deps): bump vite, the react plugin and the react type packages https://github.com/davidcristian/HeadStart/commit/b7961c5036f9aec6fb872c76f0ac1a06021efba6
+Source/document files inspected:
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/backend/app/notifiers/adapters/discord.py
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/backend/app/scrapers/adapters/greenhouse.py
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/backend/app/services/apply.py
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/backend/app/services/pipeline.py
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/LICENSE
+  https://github.com/davidcristian/HeadStart/blob/510ef86e8571b1189ec776e8878cfe88ff9a62d9/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  None returned in sampled public issue records; not proof of reliability.
+
+waddington/job-application-tracker
+https://github.com/waddington/job-application-tracker
+Focused tracker with concrete application/event/interview/offer models, CRUD routes, and follow-up/next-action calculations. No scraping or AI. Apache-2.0, active November 1 commits. Installation documentation explicitly says Linux/macOS and no Windows support because of Unix file locking. WSL would require its own evaluation. Moderate setup (Python, Node frontend build). No human bug-report evidence found in inspected issue search.
+Inspected revision: aa77ebe86ab03efe208171ecd5a59325f9834a38
+Commit history: https://github.com/waddington/job-application-tracker/commits/main
+Recent commits:
+  2026-11-01T15:33:38Z Merge pull request #180 from waddington/worktree-i18n-contribute-language https://github.com/waddington/job-application-tracker/commit/aa77ebe86ab03efe208171ecd5a59325f9834a38
+  2026-11-01T15:15:53Z docs(changelog): say what the language guide adds https://github.com/waddington/job-application-tracker/commit/cd31aafba80fa39b69c61506a9aeaaa893fbf6db
+  2026-11-01T15:15:41Z feat(i18n): a Don't see your language? link and guide; 1.2.41 https://github.com/waddington/job-application-tracker/commit/3639e84b882cf4acf3afee968fc03ec10ab69f74
+  2026-11-01T15:15:31Z fix(i18n): catch a marker that's been recased or machine translated https://github.com/waddington/job-application-tracker/commit/9ef7a82e44f7249690e6dbf95d703b0190f9b2c3
+  2026-11-01T14:55:56Z feat(i18n): a new language's files say what's left to translate https://github.com/waddington/job-application-tracker/commit/1b461441147f550708b02423d030b68f17cd892f
+Source/document files inspected:
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/docs/guide/install.md
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/docs/guide/README.md
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/pyproject.toml
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/README.md
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/src/jat/api/crud.py
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/src/jat/api/next_actions.py
+  https://github.com/waddington/job-application-tracker/blob/aa77ebe86ab03efe208171ecd5a59325f9834a38/src/jat/db/models.py
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  None returned in sampled public issue records; not proof of reliability.
+
+mrunalhatwar/ApplyPilot
+https://github.com/mrunalhatwar/ApplyPilot
+Discovery, model tailoring, validation and autonomous browser launcher code exist. Reject unchanged for this user: apply/prompt.py directs affirmative answers about tools in the same general domain without profile evidence, and scoring/tailor.py tolerates adjacent-tool assertions. This conflicts with separating demonstrated experience from learning. Advertised application volume is not a verified outcome benchmark. Last default-branch commit April 5, 2026; no GitHub latest release or issue records returned. AGPL-3.0; model/browser and optional CAPTCHA service costs.
+Inspected revision: 1062d18624ba909cdd21b2a201e2d6ce9e517d50
+Commit history: https://github.com/mrunalhatwar/ApplyPilot/commits/main
+Recent commits:
+  2026-04-05T12:42:59Z Add project docs, resume, Claude config, and remove stale CI/gitignore https://github.com/mrunalhatwar/ApplyPilot/commit/1062d18624ba909cdd21b2a201e2d6ce9e517d50
+  2026-03-08T19:12:34Z Add useapplypilot.com to disclaimer warning https://github.com/mrunalhatwar/ApplyPilot/commit/4a8d521f67f5139811c0a910ef37410f8e6d836a
+  2026-03-08T18:59:54Z Add disclaimer: ApplyPilot is not affiliated with applypilot.app https://github.com/mrunalhatwar/ApplyPilot/commit/edb86c0f1c9c1cf6176d65b8f32bdd507d93e1ff
+  2026-02-21T05:50:20Z Bump version to 0.3.0 https://github.com/mrunalhatwar/ApplyPilot/commit/89a87dfcd4867b184532bb0bbb478a5ee07bfc9d
+  2026-02-21T05:48:27Z Fix 403 Forbidden for Gemini preview/experimental models (issue #1) https://github.com/mrunalhatwar/ApplyPilot/commit/de13c8c019928dab72dbb79e6bf4de3210003175
+Source/document files inspected:
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/README.md
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/src/applypilot/apply/launcher.py
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/src/applypilot/apply/prompt.py
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/src/applypilot/discovery/jobspy.py
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/src/applypilot/scoring/tailor.py
+  https://github.com/mrunalhatwar/ApplyPilot/blob/1062d18624ba909cdd21b2a201e2d6ce9e517d50/src/applypilot/scoring/validator.py
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  None returned in sampled public issue records; not proof of reliability.
+
+TheDevRo/Jobsmith
+https://github.com/TheDevRo/Jobsmith
+Broad self-hosted copilot with inspected autofill JavaScript, prompt registry, backend apply orchestration and extension docs. Manual-submit Apply Assist is recommended by its docs; fully autonomous path is de-emphasized. Explicit embellished/fabricated content modes are a concern for this user. Extension docs describe LinkedIn/Indeed cookie transfer to localhost. A real tracking issue (#22) was closed by an October 9 fix. AGPL-3.0. Windows uses Docker; local model or paid provider setup adds effort. Latest release v0.2.9 September 23 is older than inspected main.
+Inspected revision: 14c07452646e341885e7604f167f0f68db142a60
+Commit history: https://github.com/TheDevRo/Jobsmith/commits/main
+Recent commits:
+  2026-10-09T03:05:41Z Fix manually applied jobs missing from Applied pipeline (#33, from #23 by @salehihassen) https://github.com/TheDevRo/Jobsmith/commit/14c07452646e341885e7604f167f0f68db142a60
+  2026-10-09T02:47:15Z Merge remote-tracking branch 'origin/main' into fix/manual-applied-pipeline-current https://github.com/TheDevRo/Jobsmith/commit/8fb86a711c4c8755468a98b3b5cd7295dceb3024
+  2026-10-09T02:47:15Z Manual applied: no NULL text for iOS sync, no duplicate cards, skip mid-apply https://github.com/TheDevRo/Jobsmith/commit/fb2169a1206ee08ad4c87b0d00f7d727e8778faf
+  2026-10-08T22:17:18Z build(deps): bump github.com/scinfu/swiftsoup (#21) https://github.com/TheDevRo/Jobsmith/commit/bf9d134686388cc8729b75422af23e7dcd3df26b
+  2026-10-08T22:10:25Z build(deps): bump the rust-deps group in /src-tauri with 6 updates (#19) https://github.com/TheDevRo/Jobsmith/commit/9c5e666402796a1f14ce581997a376105fca6212
+Source/document files inspected:
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/ARCHITECTURE.md
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/backend/auto_apply/orchestrator.py
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/backend/prompt_registry.py
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/extension/README.md
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/extension/src/common/fill.js
+  https://github.com/TheDevRo/Jobsmith/blob/14c07452646e341885e7604f167f0f68db142a60/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  closed | Roles in pipeline that are manually tracked aren't updated. | https://github.com/TheDevRo/Jobsmith/issues/22
+
+reactive-resume/reactive-resume
+https://github.com/reactive-resume/reactive-resume
+Now canonical reactive-resume/reactive-resume. Strong candidate to evaluate as an existing resume/tracking base. Inspected matching, human-reviewed AI line improvements, scheduled discovery/reminder execution and provider configuration. Discovery needs optional web/search services; it is not universal native job-board coverage. Free software and hosted option, MIT, optional model/search/hosting costs. Main updated November 1; latest release v6.0.9 October 29. Do not assume all main changes are in the release. Open LM Studio report is for v5.1.9 and does not prove a v6 defect.
+Inspected revision: 711ced516e95a3e1222dd7f428b488750d61d277
+Commit history: https://github.com/reactive-resume/reactive-resume/commits/main
+Recent commits:
+  2026-11-01T15:05:03Z Merge pull request #3781 from reactive-resume/feature/rx-114 https://github.com/reactive-resume/reactive-resume/commit/711ced516e95a3e1222dd7f428b488750d61d277
+  2026-11-01T15:00:20Z test: support import name lookup in PDF fixtures https://github.com/reactive-resume/reactive-resume/commit/3855aab9bbc439ea008a803b9e2478f7f6ae3c30
+  2026-11-01T14:54:58Z fix: reconcile document library and settings review https://github.com/reactive-resume/reactive-resume/commit/86d3e0db5f528f1e7e94170f5e362a267a6dcfcc
+  2026-11-01T14:42:56Z Merge pull request #3783 from reactive-resume/feature/rx-113 https://github.com/reactive-resume/reactive-resume/commit/bf4bcbcaca42542de4d73d867893bc21f3ef835a
+  2026-11-01T14:36:20Z fix: preserve offer retry states and scoped field undo https://github.com/reactive-resume/reactive-resume/commit/d48fec6cd5088c582d76714bb37afced2f17f0aa
+Source/document files inspected:
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/apps/server/src/startup/career-scheduler.ts
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/docs/guides/tailoring-a-resume-for-a-job.mdx
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/docs/guides/tracking-job-applications.mdx
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/docs/self-hosting/job-search-and-ai.mdx
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/packages/api/src/features/ai/improve.ts
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/packages/api/src/features/career/jobs.ts
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/packages/api/src/features/career/matching.ts
+  https://github.com/reactive-resume/reactive-resume/blob/711ced516e95a3e1222dd7f428b488750d61d277/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  open | Job Posting Snapshot | https://github.com/reactive-resume/reactive-resume/issues/3736
+  open | Connecting to LM Studio agents | https://github.com/reactive-resume/reactive-resume/issues/3740
+  open | Make CVs GDPR Compliant | https://github.com/reactive-resume/reactive-resume/issues/3735
+  closed | Allow offer comparison without AI extraction | https://github.com/reactive-resume/reactive-resume/issues/3706
+
+feder-cr/invisible_dots
+https://github.com/feder-cr/invisible_dots
+Historical AIHawk URL now resolves to feder-cr/invisible_dots, a general computer-agent project. Inspected redirect metadata, tree, commit/issue history and README, not this unrelated agent implementation. Old social posts and forks are not evidence that the original job-specific system remains maintained.
+Inspected revision: ef69f5e19c1b46e41e743234fa5019e39442adcb
+Commit history: https://github.com/feder-cr/invisible_dots/commits/main
+Recent commits:
+  2026-10-15T01:38:56Z Merge pull request #1454 from feder-cr/libs-latest https://github.com/feder-cr/invisible_dots/commit/ef69f5e19c1b46e41e743234fa5019e39442adcb
+  2026-10-15T00:18:52Z smoke and dependencies: the stand-in is a server package, and the capture runs on the server's python https://github.com/feder-cr/invisible_dots/commit/ed406afb14926c447f0c290faf5ca741c910cacf
+  2026-10-15T00:04:31Z browser: never pinned; the image takes the newest release and the engine reads the server it finds https://github.com/feder-cr/invisible_dots/commit/2968ca8372b1b07a4eced0e5a4e96aec167e82d6
+  2026-10-13T21:33:32Z Merge pull request #1450 from feder-cr/libs-0722 https://github.com/feder-cr/invisible_dots/commit/4d20e947a130755807e2a8784f5e2dace5753970
+  2026-10-13T20:25:33Z image: the browser is invisible-playwright-mcp 0.72.2 (invisible-playwright 0.35.7, invisible-core 45.39.0, firefox-45) https://github.com/feder-cr/invisible_dots/commit/6712104ea5b7ecb8d38f869fcdcff1305e731231
+Source/document files inspected:
+  https://github.com/feder-cr/invisible_dots/blob/ef69f5e19c1b46e41e743234fa5019e39442adcb/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  open | feat: suggest current MiniMax models through OpenRouter | https://github.com/feder-cr/invisible_dots/pull/1458
+  open | Power-user offer: real daily outreach volume, feedback, and a case study | https://github.com/feder-cr/invisible_dots/issues/1457
+  open | guest: install.sh alone starts the Dot's units, after the VM proxy | https://github.com/feder-cr/invisible_dots/pull/1456
+  open | browser: every Dot follows the newest release, and install.sh alone starts the Dot's units | https://github.com/feder-cr/invisible_dots/pull/1455
+  closed | browser: never pinned; the image takes the newest release and the engine reads the server it finds | https://github.com/feder-cr/invisible_dots/pull/1454
+  open | Apple ID 账号购买 | https://github.com/feder-cr/invisible_dots/issues/1452
+  closed | image: the browser is invisible-playwright-mcp 0.72.2 (invisible-playwright 0.35.7, invisible-core 45.39.0, firefox-45) | https://github.com/feder-cr/invisible_dots/pull/1450
+  closed | engine: no fixed cap on a tool's result; the cut and the routing follow the model's window, read from OpenRouter on every turn | https://github.com/feder-cr/invisible_dots/pull/1448
+  closed | image: the browser is invisible-playwright-mcp 0.72.0 (invisible-playwright 0.35.0, invisible-core 41.36.0) | https://github.com/feder-cr/invisible_dots/pull/1447
+  closed | docs: the README animation is built from photos in the tree, with new characters | https://github.com/feder-cr/invisible_dots/pull/1446
+
+anadivatsa/job-radar
+https://github.com/anadivatsa/job-radar
+Small understandable Greenhouse/Lever scanner, weighted keyword scoring, SQLite seen-job storage and Telegram notifications exist in job_match.py. Only two commits, June 21; no license found. It marks jobs seen before notification delivery, so delivery failure can suppress a later alert. Useful design reference, not preferred adoption baseline.
+Inspected revision: 969d5c1b5f07deb22138db26faa91c8de081b9ad
+Commit history: https://github.com/anadivatsa/job-radar/commits/master
+Recent commits:
+  2026-06-21T15:44:35Z docs: add README https://github.com/anadivatsa/job-radar/commit/969d5c1b5f07deb22138db26faa91c8de081b9ad
+  2026-06-21T15:40:36Z feat: job board scanner with Telegram alerts https://github.com/anadivatsa/job-radar/commit/8218fb280adf5a04235ab4d84c6816d4cb07a313
+Source/document files inspected:
+  https://github.com/anadivatsa/job-radar/blob/969d5c1b5f07deb22138db26faa91c8de081b9ad/job_match.py
+  https://github.com/anadivatsa/job-radar/blob/969d5c1b5f07deb22138db26faa91c8de081b9ad/README.md
+Issue/PR samples reviewed (reports are evidence of reports, not our reproduced defects):
+  None returned in sampled public issue records; not proof of reliability.
+
+mnsair/AI-Job-Search-Agent
+https://github.com/mnsair/AI-Job-Search-Agent
+Inspected workflow JSON: chat trigger, agent, model, short-term memory, SerpAPI HTTP tool and Sheets save tool. No schedule trigger, submission path, duplicate checking node or PDF/DOCX production. Repository has four commits; last commit September 28. No license or issue records found. Useful narrow template, not an end-to-end job portal.
+https://github.com/mnsair/AI-Job-Search-Agent/blob/955e0a671f308d4aa54fc1052b4f0976dc5466c1/workflow/Job_Search_Agent_FINAL.public.json
+
+Hosted product / official access evidence:
+Simplify free Copilot autofill and manual submission: https://help.simplify.jobs/help/articles/1749022-install-and-set-up-copilot
+Simplify+ $39.99 monthly; other periods available: https://help.simplify.jobs/help/articles/5623502-whats-included-in-simplify-features-and-pricing
+Simplify Autopilot submits without final review, supported postings only: https://help.simplify.jobs/help/articles/1784339-get-started-with-autopilot
+Simplify geographic coverage, including India: https://help.simplify.jobs/help/articles/6895855-supported-countries-and-regions
+Teal free unlimited tracking; $29 monthly / $13 weekly / $79 quarterly: https://help.tealhq.com/en/articles/9530153-teal-vs-teal
+Huntr free 100-job tracking; Pro $40 monthly: https://help.huntr.co/en/articles/9806024-faq
+JobCopilot advertised from $0.93/day; review mode and auto-apply documented, actual period/total must be checked: https://jobcopilot.com/pricing/
+LoopCV free and paid plans advertised; scope and success not tested: https://www.loopcv.pro/pricing/index.html
+LinkedIn third-party automation restriction: https://www.linkedin.com/help/linkedin/answer/a1340567/automated-activity-on-linkedin?lang=en
+Indeed automated application/access restriction: https://www.indeed.com/legal?hl=en_US
+Greenhouse public GET and authenticated application POST: https://docs.greenhouse.io/job-board
+Lever public postings API and limitations: https://github.com/lever/postings-api
+Ashby public postings API: https://developers.ashbyhq.com/docs/public-job-posting-api
+
+Role requirement illustrations, not a confirmed vacancy shortlist:
+Viktor backend role accepts no prior shipped LLM feature; production backend ownership emphasized. Search-indexed employer description; direct page returned a JS shell and attempted public feed was blocked (403). https://jobs.ashbyhq.com/viktor/143f3943-33ab-4614-87b8-8435517d8830/
+JBS senior Python role requires Python/production LLM experience and US residency/authorization. Search-indexed employer description; feed verification blocked (403). https://jobs.ashbyhq.com/jbs-dev/eb37f89e-9db5-476e-8055-1235a76995aa/
+An Atlys listing appeared in search results but its direct page returned 404; excluded from live-opportunity recommendations.
+
+Coverage gaps: no live integration/installer testing, security audit, benchmark of ranking quality or interview outcomes; regional completeness and sponsorship/salary accuracy remain unverified. Cannot independently establish job-post authenticity or employer intent from a ghost-job score. Closed-source services were reviewed through official documents, not product accounts. Maintenance dates are observed snapshots, not future support guarantees.
